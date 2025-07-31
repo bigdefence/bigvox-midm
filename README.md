@@ -83,9 +83,11 @@ git clone https://huggingface.co/bigdefence/Bigvox-Midm-Audio
 
 2. **추론 실행**:
    - **음성-텍스트(S2T)** 추론:
+     - **Non-streaming**
      ```bash
      python3 omni_speech/infer/bigvox.py --query_audio test_audio.wav
      ```
+     - **Streaming**
      ```bash
      python3 omni_speech/infer/bigvox_streaming.py --query_audio test_audio.wav
      ```
